@@ -7,30 +7,20 @@ if(x > 0 && y > 0)
 {
     System.Console.Write("Плоскость I");
 }
-else
-{
-    if (x > 0 && y < 0)
+else if (x > 0 && y < 0)
     {
         System.Console.Write("Плоскость II");
     }
-    else
+else if (x < 0 && y < 0)
     {
-        if (x < 0 && y < 0)
-        {
-            System.Console.Write("Плоскость III");
-        }
-        else
-        {
-            if (x > 0 && y < 0)
-            {
-                System.Console.Write("Плоскость IV");
-            }
-            else 
-            {
-                System.Console.WriteLine("Точка не принадлежит ни одной из нужных плоскостей");
-            }
-        }
-        
+        System.Console.Write("Плоскость III");
     }
+else if (x > 0 && y < 0)
+    {
+        System.Console.Write("Плоскость IV");
+    }
+else 
+{
+System.Console.WriteLine("Точка не принадлежит ни одной из нужных плоскостей");
 }
 
